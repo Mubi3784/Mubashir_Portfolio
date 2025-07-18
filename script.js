@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Typed.js Animation
     const typed = new Typed('#typed', {
-        strings: ['Software Engineer', 'Front-End Developer', 'MERN Stack Learner', 'Shopify Expert'],
+        strings: ['Software Engineer', 'Front-End Developer', 'MERN Stack Learner'],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true

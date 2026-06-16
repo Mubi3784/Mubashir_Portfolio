@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mubashir Nazir | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Custom Cursor -->
-    <!-- <div class="cursor"></div>
-    <div class="cursor-follower"></div> -->
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <a href="#" class="logo">MN</a>
+            <a href="#" class="logo">MN<span class="logo-dot">.</span></a>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,44 +24,76 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="nav-right">
+                <div class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger" aria-label="Open menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for internships & entry-level roles
+                    </div>
                     <h4>Hello, I'm</h4>
-                    <h1>Mubashir Nazir</h1>
+                    <h1>Mubashir<br><span class="name-accent">Nazir</span></h1>
                     <div class="type-container">
                         <span id="typed"></span>
                     </div>
-                    <p>BS Software Engineering student passionate about building responsive, scalable applications with
-                        modern web technologies.</p>
+                    <p>BS Software Engineering student at IIU Islamabad. Building full-stack web applications with the MERN stack, TypeScript, and REST APIs.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years coding</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-label">Projects shipped</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-num">MERN</span>
+                            <span class="stat-label">Stack</span>
+                        </div>
+                    </div>
                     <div class="hero-buttons">
-                        <a href="./assets/cv/Mubashir CV (1).pdf" class="btn btn-primary" id="resume-btn">Download
-                            Resume</a>
+                        <a href="./assets/cv/Mubashir_Nazir_CV.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
                         <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:mubashirbusiness1212@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/923105517386" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-wrapper">
                         <img src="./assets/profile-pic.jpg/nftpcv.jpg" alt="Mubashir Nazir" class="profile-img">
                         <div class="circle-animation"></div>
+                        <div class="floating-badge badge-ts">TS</div>
+                        <div class="floating-badge badge-react"><i class="fab fa-react"></i></div>
+                        <div class="floating-badge badge-node"><i class="fab fa-node-js"></i></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
+        <div class="scroll-down" aria-hidden="true">
             <span></span>
         </div>
     </section>
@@ -77,29 +105,40 @@
             <div class="about-content">
                 <div class="about-image">
                     <img src="./assets/profile-pic.jpg/nftpcv.jpg" alt="Mubashir Nazir">
+                    <div class="about-img-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Full-Stack Dev</span>
+                    </div>
                 </div>
                 <div class="about-text">
-                    <h3>Software Engineering Student & Developer</h3>
-                    <p>I'm currently pursuing a BS in Software Engineering at International Islamic University with a
-                        solid grasp of OOP, data structures, and modern web technologies.</p>
-                    <p>Enthusiastic about building responsive, scalable applications and contributing to team-driven
-                        development environments.</p>
+                    <div class="about-eyebrow">Who I am</div>
+                    <h3>Software Engineering Student & MERN Stack Developer</h3>
+                    <p>I'm currently pursuing a BS in Software Engineering at <strong>International Islamic University Islamabad</strong>, with hands-on experience building full-stack web applications using the MERN stack.</p>
+                    <p>I'm proficient in <strong>TypeScript, REST API design, JWT authentication, and Redux Toolkit</strong>. I enjoy building scalable, maintainable software and thrive in collaborative, learning-focused environments.</p>
                     <div class="personal-info">
-                        <div>
-                            <span>Name:</span>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-user"></i> Name</span>
                             <span>Mubashir Nazir</span>
                         </div>
-                        <div>
-                            <span>Email:</span>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+                            <span>BS Software Engineering (2023–Present)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
                             <span>mubashirbusiness1212@gmail.com</span>
                         </div>
-                        <div>
-                            <span>From:</span>
-                            <span>Islamabad, Pakistan</span>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+                            <span>Faisal Town, Islamabad, Pakistan</span>
                         </div>
-                        <div>
-                            <span>WhatsApp Contact</span>
-                            <span>+92 3105-5517386</span>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+                            <span>+92 310-5517386</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-language"></i> Languages</span>
+                            <span>Urdu (Native) · English (C1)</span>
                         </div>
                     </div>
                     <div class="about-buttons">
@@ -115,87 +154,109 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">My <span>Skills</span></h2>
-            <div class="skills-content">
-                <div class="skills-left">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML5</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress html"></div>
-                        </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>CSS3</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress css"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress js"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C++</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress cpp"></div>
-                        </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-strong">JavaScript (ES6+)</span>
+                        <span class="skill-tag skill-strong">TypeScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">C++</span>
                     </div>
                 </div>
-                <div class="skills-right">
-                    <h3>Professional Skills</h3>
-                    <div class="skill-icons">
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h4>OOP</h4>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                            <h4>Data Structures</h4>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <h4>Git</h4>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <h4>GitHub</h4>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <h4>Front-End Dev</h4>
-                        </div>
-                        <div class="icon-box">
-                            <div class="icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h4>Problem Solving</h4>
-                        </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fab fa-react"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-strong">React.js</span>
+                        <span class="skill-tag skill-strong">Redux Toolkit</span>
+                        <span class="skill-tag">React Router DOM</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">Axios</span>
                     </div>
                 </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-strong">Node.js</span>
+                        <span class="skill-tag skill-strong">Express.js</span>
+                        <span class="skill-tag">REST API Design</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">Passport.js</span>
+                        <span class="skill-tag">bcrypt</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-strong">MongoDB</span>
+                        <span class="skill-tag skill-strong">Mongoose ODM</span>
+                        <span class="skill-tag">Oracle Database</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>State Management</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-strong">Redux Toolkit</span>
+                        <span class="skill-tag">createAsyncThunk</span>
+                        <span class="skill-tag">createSlice</span>
+                        <span class="skill-tag">React Hooks</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Dev & Debug Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Redux DevTools</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Browser DevTools</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">API Versioning</span>
+                        <span class="skill-tag">DRY Principle</span>
+                        <span class="skill-tag">Software Design</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -206,89 +267,92 @@
             <h2 class="section-title">My <span>Projects</span></h2>
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="shopify">Shopify</button>
-                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="cpp">C++ / DSA</button>
             </div>
             <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="web">
+
+                <!-- Project 1: Video Sharing Platform -->
+                <div class="project-card featured" data-category="fullstack">
+                    <div class="project-featured-badge">Featured</div>
                     <div class="project-img">
-                        <img src="./assets/project_pic/netflix_cover_page.png">
+                        <div class="project-placeholder project-placeholder--video">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
                         <div class="project-links">
-                            <a href=" #" class="project-link"><i
-                                    class="fas fa-search"></i></a>
+                            <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Netflix_clone</h3>
-                        <p>HTML, CSS</p>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <!-- <div class="project-card" data-category="shopify">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 2">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                        <h3>Video Sharing Platform</h3>
+                        <p class="project-desc">Full-stack YouTube-style app. JWT auth via Passport.js, Redux Toolkit state management, REST API with versioned endpoints (/api/v1), AWS S3 video storage, deployed on Vercel + Render.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>TypeScript</span><span>Node.js</span><span>MongoDB</span><span>Redux</span><span>AWS S3</span><span>JWT</span>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Shopify Store</h3>
-                        <p>Shopify, Product Management</p>
-                    </div>
-                </div> -->
-                <!-- Project 3 -->
-                <!-- <div class="project-card" data-category="js">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 3">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>JavaScript App</h3>
-                        <p>ES6, DOM Manipulation</p>
-                    </div>
-                </div> -->
-
-
-
-                <!-- project 4 -->
-                <!-- New Project Card -->
-                <div class="project-card" data-category="js">
-                    <div class="project-img">
-                        <img src="./assets/project_pic/Inventarisatie en Beheersingssysteem.png">
-                        <div class="project-links">
-
-                            <a href="https://mubi3784.github.io/DSA-Visualizer" class="project-link"><i
-                                    class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Inventory & Stock Control</h3>
-                        <p>C++, OOP, BST, Linked Lists</p>
                     </div>
                 </div>
 
-
-
-                <!-- Project 5 -->
-                <!-- <div class="project-card" data-category="web">
+                <!-- Project 2: Netflix Clone -->
+                <div class="project-card" data-category="frontend">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 4">
+                        <img src="./assets/project_pic/netflix_cover_page.png" alt="Netflix Clone" loading="lazy">
                         <div class="project-links">
-                            <a href="#https://mubi3784.github.io/DSA-Visualizer/ "></i></a>
-                            <a href="https://mubi3784.github.io/DSA-Visualizer/" class="project-link"><i class="fas fa-search"></i></a>
+                            <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>HTML, CSS, JavaScript</p>
+                        <h3>Netflix Clone</h3>
+                        <p class="project-desc">Pixel-perfect Netflix landing page clone with responsive layout, mobile-first CSS, and semantic HTML5.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span>
+                        </div>
                     </div>
-                </div> -->
+                </div>
+
+                <!-- Project 3: Inventory & Stock Control (C++) -->
+                <div class="project-card" data-category="cpp">
+                    <div class="project-img">
+                        <img src="./assets/project_pic/Inventarisatie en Beheersingssysteem.png" alt="Inventory System" loading="lazy">
+                        <div class="project-links">
+                            <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory & Stock Control System</h3>
+                        <p class="project-desc">Console-based inventory management system in C++ using OOP principles, Binary Search Trees for fast lookups, and Linked Lists for dynamic stock records.</p>
+                        <div class="project-tags">
+                            <span>C++</span><span>OOP</span><span>BST</span><span>Linked Lists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Animal Shelter Management System (SRS / SE Project) -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-img">
+                        <div class="project-placeholder project-placeholder--se">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Animal Shelter Management System</h3>
+                        <p class="project-desc">Software Engineering course project. Produced complete SRS document, UML use case & sequence diagrams, and class diagram following IEEE standards.</p>
+                        <div class="project-tags">
+                            <span>Software Engineering</span><span>UML</span><span>SRS</span><span>Use Cases</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -299,54 +363,87 @@
         <div class="container">
             <h2 class="section-title">Work <span>Experience</span></h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2025 - Current</div>
-                    <div class="timeline-content">
-                        <h3>Website Development Internee</h3>
-                        <h4>INEFFABLE DEVS</h4>
-                        <p>Learning MERN Stack Website Development including HTML5, CSS3, JavaScript (Basics, ES6,
-                            Functional Programming, Data Structures, DOM), Mobile First Responsive Approach, Git &
-                            GitHub.</p>
-                    </div>
-                </div>
-
 
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2025 – Sep 2025</div>
                     <div class="timeline-content">
-                        <h3>Business Owner</h3>
-                        <h4>E-commerce Shopify Store</h4>
+                        <div class="tl-header">
+                            <h3>Front-End Developer Intern</h3>
+                            <h4><i class="fas fa-building"></i> SWIS MAX Company</h4>
+                        </div>
                         <ul>
-                            <li>Managing an E-commerce Shopify Store</li>
-                            <li>Product Management (Listing, updating, deletion)</li>
-                            <li>Order Management (Processing, Fulfillment, Tracking)</li>
-                            <li>Finance Management (Tracking, Profit Calculation)</li>
-                            <li>Customer communication and issue resolution</li>
+                            <li>Developed responsive web interfaces using HTML5, CSS3, and JavaScript (ES6+).</li>
+                            <li>Applied mobile-first design principles and functional programming patterns.</li>
+                            <li>Worked with DOM manipulation and version control using Git &amp; GitHub.</li>
                         </ul>
                     </div>
                 </div>
 
-
                 <div class="timeline-item">
-                    <div class="timeline-date">2025 - Current</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 – Present</div>
                     <div class="timeline-content">
-                        <h3>Full-Stack Developer (Project-Based)</h3>
-                        <h4>Video Sharing Web App – MERN Stack + AWS</h4>
+                        <div class="tl-header">
+                            <h3>Full-Stack Developer (Personal Project)</h3>
+                            <h4><i class="fas fa-code-branch"></i> Video Sharing Web App — MERN + AWS</h4>
+                        </div>
                         <ul>
-                            <li>Building a YouTube-style video sharing web application using MERN Stack (MongoDB,
-                                Express, React, Node.js).</li>
-                            <li>Implemented secure user authentication with JWT and TypeScript-based API development.
-                            </li>
+                            <li>Built a YouTube-style video sharing app using the full MERN stack.</li>
+                            <li>Implemented JWT authentication with Passport.js and TypeScript-based API design.</li>
                             <li>Handled video uploads using Multer and integrated cloud storage with AWS S3.</li>
-                            <li>Styled responsive frontend UI with Tailwind CSS and deployed frontend via Vercel.</li>
-                            <li>Backend API deployed on Render; database management using MongoDB and Mongoose.</li>
+                            <li>Managed global state with Redux Toolkit (createAsyncThunk, extraReducers).</li>
+                            <li>Frontend deployed on Vercel; backend API deployed on Render.</li>
                         </ul>
                     </div>
                 </div>
 
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – 2024</div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <h3>Business Owner / Online Marketer</h3>
+                            <h4><i class="fab fa-shopify"></i> E-Commerce Shopify Store · Self-Employed</h4>
+                        </div>
+                        <ul>
+                            <li>Managed product listings, order processing, fulfilment, and customer communication.</li>
+                            <li>Tracked revenue, profit, and income using data-driven reporting.</li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
 
-
+            <!-- Education -->
+            <div class="education-block">
+                <h3 class="edu-title">Education</h3>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div class="edu-info">
+                            <h4>BS Software Engineering</h4>
+                            <p>International Islamic University Islamabad</p>
+                            <span>Sep 2023 – Present</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-info">
+                            <h4>Intermediate (Pre-Engineering)</h4>
+                            <p>Pakistan Scout Cadet College Batarasi, Mansehra</p>
+                            <span>Aug 2021 – Jul 2023</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-info">
+                            <h4>Matriculation</h4>
+                            <p>Pakistan Scout Cadet College Batarasi, Mansehra</p>
+                            <span>Mar 2019 – Aug 2021</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -354,61 +451,63 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact <span>Me</span></h2>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="contact-subtitle">I'm actively looking for internship and entry-level software engineering roles. Let's connect!</p>
             <div class="contact-content">
                 <div class="contact-left">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <div class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-text">
+                    <div class="contact-cards">
+                        <a href="mailto:mubashirbusiness1212@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
                                 <h4>Email</h4>
                                 <p>mubashirbusiness1212@gmail.com</p>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="icon">
-                                <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/923105517386" target="_blank" rel="noopener" class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+92 310-5517386</p>
                             </div>
-                            <div class="info-text">
-                                <h4>Phone</h4>
-                                <p>+92 310 5517386</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/" target="_blank" rel="noopener" class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/mubashir</p>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/Mubi3784</p>
                             </div>
-                            <div class="info-text">
-                                <h4>Location</h4>
-                                <p>Islamabad, Pakistan</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Mubi3784" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href=" https://wa.me/message/EVR3MFUUBY7FK1" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/" class="social-link"><i class="fab fa-behance"></i></a>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formspree.io/f/mldldlrq" method="POST" class="contact-form">
+                    <form action="https://formspree.io/f/mldldlrq" method="POST" class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Mubashir Nazir" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Hi Mubashir, I'd like to talk about..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-status" id="formStatus"></p>
                     </form>
                 </div>
             </div>
@@ -420,7 +519,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#">MN</a>
+                    <a href="#">MN<span class="logo-dot">.</span></a>
+                    <p>Building the web, one commit at a time.</p>
                 </div>
                 <div class="footer-links">
                     <ul>
@@ -433,19 +533,18 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Mubi3784"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/message/EVR3MFUUBY7FK1"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/mubashir-nazir-987220293/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Mubi3784" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/923105517386" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:mubashirbusiness1212@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Mubashir Nazir. All Rights Reserved.</p>
+                <p>&copy; 2025 Mubashir Nazir. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
